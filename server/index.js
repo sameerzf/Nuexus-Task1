@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(cors({credentials:true,origin:"http://localhost:5173"}));
 app.use('/api/users',userRoutes)
 
-connect('mongodb+srv://venomfire_2525:sameer123@cluster0.neida3j.mongodb.net/mern-blog-app').then(
+connect('mongouri').then(
     app.listen(5000,()=>{
         console.log("Server is running on port 5000")
 
